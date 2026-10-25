@@ -1,0 +1,21 @@
+%config {
+    import-dbg = true;
+}
+
+import "uci-route-demo.so" as "uci_route_demo";
+
+%define {
+    object UciRoute[] {
+        %key string Alias;
+        string Target;
+        string Netmask;
+        string Gateway;
+        string Interface;
+    }
+}
+
+entry-point uci_route_demo.uci_route_main;
+
+%populate {
+    on event "dm:object-changed" of "UciRoute." call route_changed;
+}
