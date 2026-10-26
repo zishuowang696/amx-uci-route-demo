@@ -119,3 +119,9 @@ config route 'route1'
 ## License
 
 MIT
+
+## Blog deep dives
+
+- [Ambiorix wait_for example: build and run amxrt from one C file](https://embedai.com.cn/en/posts/amx-example-wait-for)
+- [Ambiorix architecture: container, bus abstraction and data model](https://embedai.com.cn/en/posts/amx-principles-1-container-bus-datamodel)
+- [prplOS vs OpenWrt: architecture and board reality](https://embedai.com.cn/en/posts/prplos-vs-openwrt)
